@@ -117,14 +117,6 @@ a{
 	border-top: 2px dotted rgb(180, 180, 180);
 	list-style-type:none;
 }
-.column-link a {
-	text-decoration:none;
-	color: rgb(150, 150, 150);
-}
-.column-link:hover {
-	background-color:rgb(200, 200, 200);
-	cursor:pointer;
-}
 
 /**------------------------------------------
 /** Vertical List Elements */
