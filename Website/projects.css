@@ -58,6 +58,7 @@ a{
 /**------------------------------------------
 /** the actual links within the list */
 .link a{
+	text-decoration:none;
 	vertical-align:middle;
 }
 
@@ -84,7 +85,7 @@ a{
 	top: 100px; /**puts the nav bar to the top of the screen under the first */
 	left: 0;
 	background-color: rgb(237, 237, 237);
-	color: rgba(85, 83, 83, 0.932);
+	color: rgba(83, 83, 83, 0.932);
 	width: 200px;
 	height: 90%;
 	z-index: 0;
