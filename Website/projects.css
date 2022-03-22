@@ -1,4 +1,4 @@
-/**Global */
+/* ! Global */
 html {
 	font-family:'Courier New', Courier, monospace;
 	background-color: rgb(255,255,250);
@@ -10,7 +10,7 @@ a{
 }
 
 /**====================================================================================================
-/**Navigation*/
+/*! Navigation*/
 
 /** The Nav Bar */
 .navigation {
@@ -58,7 +58,6 @@ a{
 /**------------------------------------------
 /** the actual links within the list */
 .link a{
-	text-decoration:none;
 	vertical-align:middle;
 }
 
@@ -78,7 +77,7 @@ a{
 }
 
 /**====================================================================================================
-/** Vertical Navigation */
+/*! Vertical Navigation */
 
 .vertical-nav {
 	position: absolute; /**This is so that the navigation bar stays on the left */
@@ -102,27 +101,35 @@ a{
 /**------------------------------------------
 /** Vertical List Categories */
 .column-link {
-	color: rgb(150, 150, 150);
-	font-size: 18px;
-	padding: 30px;
-	border-radius: 10px;
+	color: rgb(100, 100, 100);
+	font-size: 20px;
+	padding: 10px;
 	list-style-type:none;
+	display:inline-block;
+	height: 1fr;
+	width: 160px;
+	border-bottom: 2px dotted rgb(150, 150, 150);
 }
 
 .column-link a {
 	text-decoration:none;
 	color: rgb(150, 150, 150);
 }
-.column-link:hover {
+.art:hover {
 	background-color:rgb(220, 220, 220);
 	color: rgb(120, 120, 120);
 	cursor:pointer;
 	box-shadow:rgb(150, 150, 150) 0px .5px 0px 0px;
 }
-
-/**------------------------------------------
-/** Vertical List Elements */
-
+.art {
+	color: rgb(150,150,150);
+	font-size:15px;
+	padding-left: 20px;
+	padding:7px;
+	display: inline-block;
+	height: 1fr;
+	width: 185px;
+}
 /**------------------------------------------
 /** Vertical List Element Hover */
 .column:active {
