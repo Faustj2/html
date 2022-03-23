@@ -1,0 +1,66 @@
+html {
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+	/* background-color: rgb(255,255,250); */
+    color: rgb(120, 120, 120);
+    margin:0;
+    padding:0;
+}
+ul {
+    margin:0;
+}
+li{
+	list-style-type: none;
+    color: rgb(83, 83, 83);
+}
+
+.navigation {
+    position:fixed;
+    display:grid;
+    top: 0;
+	left: 0;
+	background-color: rgb(245, 245, 245);
+	width:100%;
+    min-width: 890px;
+    height: auto;
+    font-size: 1.5rem
+    
+}
+
+.nav-link {
+    float: left;
+	padding: 1.8rem;
+    text-decoration:none;
+	list-style-type:none;
+	vertical-align:middle;
+    transition: background-color .26s ease-in .03s;
+    text-transform:uppercase;
+
+}
+.nav-link a {
+	color: rgb(83, 83, 83);
+    text-decoration:none;
+}
+.nav-left {
+	color:rgb(85, 85, 85);
+	list-style-type:none;
+}
+.link {
+    float: right;
+}
+.link:hover {
+    box-shadow:rgb(150, 150, 150) 0px .5px 0px 0px;
+    color:rgb(100, 100, 100);
+	background-color: rgb(200, 200, 200);
+	cursor:pointer;
+}
+.link:active {
+	box-shadow: rgb(150, 150, 150) 0px 2px 0px 0px;
+}
+img {
+    position:fixed;
+    object-fit:contain;
+    width:100%;
+    height:auto;
+    opacity: 0.2;
+}
