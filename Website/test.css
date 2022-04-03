@@ -1,66 +1,220 @@
-html {
-    font-size: 16px;
-    font-family:'Courier New', Courier, monospace;
-	/* background-color: rgb(255,255,250); */
-    color: rgb(120, 120, 120);
-    margin:0;
-    padding:0;
+
+/*====================================================================================*/
+/* ! Responsive Design*/
+/*? Mobile Devices */
+/* @media (max-width: 480px){ */
+* {
+        --color-secondary:white;
+        --color-primary:rgb(129, 50, 168);
+        --color-tertiary:rgb(90, 24, 122);
+        font-family:'Courier New', Courier, monospace;
+        margin:0;
+        padding:0;
 }
-ul {
-    margin:0;
-}
-li{
-	list-style-type: none;
-    color: rgb(83, 83, 83);
+    .navigation {
+        position:fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--color-primary);
+        width:100%;
+        z-index: 0;
+        height: auto;
+    }
+    .nav-link {
+        display:block;
+        font-size: 25px;
+        padding:10px;
+        text-transform: uppercase;
+        color: var(--color-secondary);
+        text-align: center;
+        text-decoration:none;
+    }
+    .link:hover {
+        background-color: var(--color-tertiary);
+        opacity: .9;
+        color: var(--color-secondary);
+    }
+/* } */
+/* 
+/*? Tablets*/
+/* @media only screen and (min-width:481px) and (max-width:768px){ */
+
 }
 
-.navigation {
-    position:fixed;
-    display:grid;
-    top: 0;
-	left: 0;
-	background-color: rgb(245, 245, 245);
-	width:100%;
-    min-width: 890px;
-    height: auto;
-    font-size: 1.5rem
+/*? Small Screens, Laptops */
+/* @media only screen and (min-width:769px) and (max-width:1024px){
+    html {
+        font-size: 16px;
+        font-family:'Courier New', Courier, monospace;
+    }
+    li{
+        list-style-type: none;
+    }
     
-}
+    .navigation {
+        position:fixed;
+        display:grid;
+        top: 0;
+        left: 0;
+        background-color: var(--color-primary);
+        width:100%;
+        min-width: 890px;
+        height: auto;
+        font-size: 1.5rem
+        
+    }
+    
+    .nav-link {
+        float: left;
+        padding: 1.8rem;
+        text-decoration:none;
+        list-style-type:none;
+        vertical-align:middle;
+        color: var(--color-secondary);
+        transition: background-color .26s ease-in .03s;
+        text-transform:uppercase;
+    
+    }
+    .nav-link a {
+        text-decoration:none;
+    }
+    .nav-left {
+        color:rgb(156, 37, 37);
+        list-style-type:none;
+    }
+    .link:hover {
+        box-shadow:rgb(150, 150, 150) 0px .5px 0px 0px;
+        color:var(--color-primary);
+        background-color: var(--color-tertiary);
+        cursor:pointer;
+    }
+    .link:active {
+        box-shadow: var(--color-primary) 0px 2px 0px 0px;
+    }
+    img {
+        position:fixed;
+        object-fit:contain;
+        width:100%;
+        height:auto;
+        opacity: 0.2;
+    }
+} */
 
-.nav-link {
-    float: left;
-	padding: 1.8rem;
-    text-decoration:none;
-	list-style-type:none;
-	vertical-align:middle;
-    transition: background-color .26s ease-in .03s;
-    text-transform:uppercase;
+/*? Desktops, Large Screens */
+/* @media only screen and (min-width:1025px) and (max-width:1200px){
+    html {
+        font-size: 16px;
+        font-family:'Courier New', Courier, monospace;
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    .navigation {
+        position:fixed;
+        display:grid;
+        top: 0;
+        left: 0;
+        background-color: var(--color-primary);
+        width:100%;
+        min-width: 890px;
+        height: auto;
+        font-size: 1.5rem
+        
+    }
+    
+    .nav-link {
+        float: left;
+        padding: 1.8rem;
+        text-decoration:none;
+        list-style-type:none;
+        vertical-align:middle;
+        color: var(--color-secondary);
+        transition: background-color .26s ease-in .03s;
+        text-transform:uppercase;
+    
+    }
+    .nav-link a {
+        text-decoration:none;
+    }
+    .nav-left {
+        color:rgb(156, 37, 37);
+        list-style-type:none;
+    }
+    .link:hover {
+        box-shadow:rgb(150, 150, 150) 0px .5px 0px 0px;
+        color:var(--color-primary);
+        background-color: var(--color-tertiary);
+        cursor:pointer;
+    }
+    .link:active {
+        box-shadow: var(--color-primary) 0px 2px 0px 0px;
+    }
+    img {
+        position:fixed;
+        object-fit:contain;
+        width:100%;
+        height:auto;
+        opacity: 0.2;
+    }
+} */
 
+/*? Extra large screens, TVs */
+/* @media only screen and (min-width:1201px) {
+    html {
+        font-size: 1vw;
+        font-family:'Courier New', Courier, monospace;
+    }
+    li{
+        list-style-type: none;
+    }
+    
+    .navigation {
+        position:fixed;
+        display:grid;
+        top: 0;
+        left: 0;
+        background-color: var(--color-primary);
+        width:100%;
+        min-width: 890px;
+        height: auto;
+        font-size: 1.5rem
+        
+    }
+    
+    .nav-link {
+        float: left;
+        padding: 1.8rem;
+        text-decoration:none;
+        list-style-type:none;
+        vertical-align:middle;
+        color: var(--color-secondary);
+        transition: background-color .26s ease-in .03s;
+        text-transform:uppercase;
+    
+    }
+    .nav-link a {
+        text-decoration:none;
+    }
+    .nav-left {
+        color:rgb(156, 37, 37);
+        list-style-type:none;
+    }
+    .link:hover {
+        box-shadow:rgb(150, 150, 150) 0px .5px 0px 0px;
+        color:var(--color-primary);
+        background-color: var(--color-tertiary);
+        cursor:pointer;
+    }
+    .link:active {
+        box-shadow: var(--color-primary) 0px 2px 0px 0px;
+    }
+    img {
+        position:fixed;
+        object-fit:contain;
+        width:100%;
+        height:auto;
+        opacity: 0.2;
+    }
 }
-.nav-link a {
-	color: rgb(83, 83, 83);
-    text-decoration:none;
-}
-.nav-left {
-	color:rgb(85, 85, 85);
-	list-style-type:none;
-}
-.link {
-    float: right;
-}
-.link:hover {
-    box-shadow:rgb(150, 150, 150) 0px .5px 0px 0px;
-    color:rgb(100, 100, 100);
-	background-color: rgb(200, 200, 200);
-	cursor:pointer;
-}
-.link:active {
-	box-shadow: rgb(150, 150, 150) 0px 2px 0px 0px;
-}
-img {
-    position:fixed;
-    object-fit:contain;
-    width:100%;
-    height:auto;
-    opacity: 0.2;
-}
+==================================================================================== */
