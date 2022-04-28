@@ -1,12 +1,24 @@
-* {
+:root {
     --color-darkest: #17252a;
     --color-dark:#2B7A78;
     --color-main: #3AAFA9;
     --color-light: #DEF2F1;
     --color-lightest: #FEFFFF;
-    font-family: 'Questrial', sans-serif;
-    margin:0;
-    padding:0;
+    
+    --ff-ss: 'Questrial', sans-serif;
+    --zero: 0;
+    
+    /*? font sizes */
+    --fz-xs: 10px;
+    --fz-s:  12px;
+    --fz-m:  15px;
+    --fz-l:  18px;
+    --fz-xl: 20px;
+}
+* {
+    margin:var(--zero);
+    padding:var(--zero);
+    font-family:var(--ff-ss);
 }
 .text {
     color: var(--color-light);
@@ -16,8 +28,8 @@ body {
 }   
 .navigation {
     position:sticky;
-    top:0;
-    left:0;
+    top:var(--zero);
+    left:var(--zero);
     width:100%;
     z-index:1;
     height:auto;
@@ -25,12 +37,13 @@ body {
 }
 .grid-container {
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 'left grid grid grid right';
     justify-content: space-evenly;
     align-content:center;
     padding-top: 3vw;
 }
 .grid-item {
+    grid-area: 'grid';
     display:inline-grid;
     grid-template-areas: 'image'
                          'image'
@@ -38,10 +51,10 @@ body {
                          'description'
                          'description';
     height:auto;
-    padding:20px;
-    margin:15px;
+    padding:var(--fz-l);
+    margin:var(--fz-m);
     background-color: var(--color-dark);
-    border-radius: 20px;
+    border-radius: var(--fz-l);
 }
 .nav-link {
     display: inline-block;
@@ -61,27 +74,25 @@ body {
     text-align:left;
     display:block;
     text-transform: Uppercase;
-    color: var(--color-lightest);
 }
 .project-icon {
-    float:right;
+    display:inline-grid;
 }
 .project-description {
     grid-area: 'description';
     text-align:left;
-    color: var(--color-light);
 }
 .link:hover {
     color: var(--color-main);
-    transform: scale(1.05);
+    transform: scale(1.01);
     transition: ease-in;
 }
 a {
     text-decoration: none;
 }
 .grid-item:hover {
-    z-index: 0;
-    transform: scale(1.05);
+    z-index: var(--zero);
+    transform: scale(1.02);
     transition: ease-in;
 }
 /*!==================================================================================================== */
@@ -93,7 +104,7 @@ a {
         font-size:10vw;
         padding-top: 2.5px;
         padding-bottom: 2.5px;
-        padding-left: 10px;
+        padding-left: var(--fz-xs);
         text-align: left;
     }
     .header {
@@ -101,8 +112,8 @@ a {
     }
     .grid-container {
         display:grid;
-        grid-template-columns: auto;
-        justify-content: space-evenly;
+        grid-template-columns: left auto right;
+        justify-content:space-evenly;
         align-content:center;
         padding-top: 3vw;
     }
